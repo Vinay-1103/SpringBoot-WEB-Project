@@ -26,6 +26,7 @@ public class ProductController {
     @GetMapping("/products")
     public ResponseEntity<List<Product>> getAllProducts(){
         return new ResponseEntity<>(service.getAllProducts(), HttpStatus.OK);
+
     }
 
     @GetMapping("/product/{id}")
